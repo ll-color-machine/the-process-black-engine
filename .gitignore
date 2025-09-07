@@ -1,3 +1,62 @@
+# --- OS junk ---
+.DS_Store
+Thumbs.db
+
+# --- pnpm (you already cover npm/yarn) ---
+pnpm-debug.log*
+.pnpm-debug.log*
+
+# --- Editors / IDE (optional if you commit workspace settings) ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Python (for py/ subproject) ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.tox/
+.coverage
+.coverage.*
+htmlcov/
+.venv/
+venv/
+ENV/
+env/
+.uv/                 # uv virtualenv/caches
+__pypackages__/      # PEP 582 local packages
+.direnv/             # direnv
+.python-version      # pyenv local version file
+.ruff_cache/         # ruff linter cache
+.pyre/               # Pyre type checker
+.pytype/             # pytype type checker
+
+# --- Notebooks (keep .ipynb, ignore junk) ---
+.ipynb_checkpoints/
+*.ipynb~
+
+# --- Turborepo (if you add it later) ---
+.turbo/
+
+# --- Prisma / SQLite (optional: if you use local sqlite dev DBs) ---
+*.db
+*.sqlite
+*.sqlite3
+prisma/dev.db
+prisma/*.db
+
+# --- Supabase local (optional) ---
+supabase/.temp/
+supabase/.branches/
+
+# --- Everything below is from your vanilla file (kept) ---
+
 # Logs
 logs
 *.log
@@ -84,8 +143,6 @@ dist
 
 # Gatsby files
 .cache/
-# Comment in the public line in if your project uses Gatsby and not Next.js
-# https://nextjs.org/blog/next-9-1#public-directory-support
 # public
 
 # vuepress build output

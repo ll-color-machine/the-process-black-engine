@@ -1,0 +1,25 @@
+{
+  "name": "process-black-cli",
+  "version": "0.1.0",
+  "private": true,
+  "description": "CLI utilities for the-process-black-engine",
+  "bin": {
+    "prism-job": "bin/prism-job.js"
+  },
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "build": "echo 'no build step'",
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=20 <23"
+  }
+}
+
